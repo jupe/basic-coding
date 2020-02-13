@@ -6,8 +6,7 @@ namespace exercise_04
     {
         public static void Main(string[] args)
         {
-            string message = "Passport and floss!";
-            Console.WriteLine(message);
+            Console.WriteLine("Passport and a toothbrush!");
         }
     }
 }
