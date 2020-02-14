@@ -12,7 +12,7 @@ namespace exercise_17
       Console.WriteLine("Give the second number!");
       string value2 = Console.ReadLine();
       int intValue2 = Convert.ToInt32(value2);
-      Console.Write("The sum is " + (intValue + intValue2));
+      Console.WriteLine("The sum is " + (intValue + intValue2));
 
       // Write your code here:
 
