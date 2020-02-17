@@ -10,6 +10,7 @@ namespace exercise_08
             Console.WriteLine("What is your name?");
             string message = Console.ReadLine();
             Console.WriteLine("Hello " + message + "!");
+            
         }
     }
 }
