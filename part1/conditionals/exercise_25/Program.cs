@@ -10,7 +10,7 @@ namespace exercise_25
       Console.WriteLine("Give a number:");
       string number = Console.ReadLine();
       int speed = Convert.ToInt32(number);
-      if (speed < 1985)
+      if (speed == 1984)
       {
         Console.WriteLine("Orwell");
       } 

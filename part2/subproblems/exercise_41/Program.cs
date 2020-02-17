@@ -8,7 +8,12 @@ namespace exercise_41
     {
 
       // Write your code here:
-      
+      string number = Console.ReadLine();
+      int intValue = Convert.ToInt32(number);
+      int sum = (intValue * intValue);
+      Console.WriteLine(sum);
+
+
     }
   }
 }
