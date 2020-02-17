@@ -7,16 +7,18 @@ namespace exercise_33
     public static void Main(string[] args)
     {
       // Write your code here:
-      Console.WriteLine("Do you want to continue?");
-      string string1 = Console.ReadLine();
-      
-      if (string1 == no)
+      Console.WriteLine("Give the first string:");
+      string word1 = Console.ReadLine();
+      Console.WriteLine("Give the second string:");
+      string word2 = Console.ReadLine();
+
+      if (word1 == word2)
       { 
-        Console.WriteLine();
+        Console.WriteLine("Echo!");
       }
       else 
       {
-        Console.WriteLine("Do you want to continue?");
+        Console.WriteLine("Nope!");
       }
     }
   }
