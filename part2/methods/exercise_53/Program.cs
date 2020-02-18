@@ -13,8 +13,7 @@ namespace exercise_53
     // Write your method here:
     public static void Division(int numerator, int denom)
     {
-      
-      Console.WriteLine((double)numerator / denom);
+       Console.WriteLine((double)numerator / denom);
     }
-}
+  }
 }
