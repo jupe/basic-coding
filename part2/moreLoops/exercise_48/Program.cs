@@ -10,7 +10,7 @@ namespace exercise_48
       // Write your code here:
       Console.WriteLine("Give numbers:");
       int summa = 0; 
-      int numbers = 0;
+      double numbers = 0;
       int even = 0;
       int odd = 0;
 
