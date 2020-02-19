@@ -10,21 +10,21 @@ namespace exercise_48
       // Write your code here:
       Console.WriteLine("Give numbers:");
       int summa = 0; 
-      double numbers = 0;
+      int numbers = 0;
       int even = 0;
       int odd = 0;
 
       while (true)
 
-     {
+      {
         int intValue1 = Convert.ToInt32(Console.ReadLine());
         if (intValue1 == -1)
         {
           break;
         }
-        summa = summa + intValue1;
+        summa += intValue1;
         numbers++;
-        if (intValue1 % 2 == 0)
+        if ((intValue1 % 2) == 0)
         {
           even++;
         }
