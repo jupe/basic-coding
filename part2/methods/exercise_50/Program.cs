@@ -11,17 +11,16 @@ namespace exercise_50
       int times = Convert.ToInt32(Console.ReadLine());
       int count = 0;
       
-    while (count < times)
-    {
-      PrintPhrase();
-      count++;
-    }
+      while (count < times)
+      {
+        PrintPhrase();
+        count++;
+      }
     }
     // Write your method here:
     public static void PrintPhrase() 
     {
       Console.WriteLine("In a hole in the ground there lived a method");
     }
-    
   }
 }
