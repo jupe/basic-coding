@@ -6,12 +6,12 @@ namespace exercise_61
   {
     public static void Main(String[] args)
     {
-
+    ChristmasTree
     }
 
     public static void PrintStars(int number)
     {
-
+    
     }
 
     public static void PrintSpaces(int number)
