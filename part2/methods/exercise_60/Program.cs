@@ -30,7 +30,7 @@ namespace exercise_60
 
     public static void PrintSquare(int size)
     {
-      for (int y = 0; y < size; y++) 
+      for (int i = 0; i < size; i++) 
       {
           PrintStars(size);
       }

@@ -13,11 +13,19 @@ namespace exercise_69
         int input = Convert.ToInt32(Console.ReadLine());
         if (input == -1)
         {
-          break;
+                   
+         
+            break;
+          }  
+        
+          list.Add(input); 
         }
-        list.Add(input);
+         
+        }
+        
       }
-
-    }
+              
+      
+    }    
   }
 }
