@@ -19,13 +19,13 @@ namespace exercise_72
         list.Add(input);
       }
      
-      int samallest =list[0];
-      for(int i =0; i < list.Count; i++)
+      int smallest = list[0];
+      for (int i =0; i < list.Count; i++)
         {
           int number =list[i];
-          if (samallest > number);
+          if (smallest > number)
           {
-            samallest = number;
+            smallest = number;
           }
         }
       
@@ -37,9 +37,9 @@ namespace exercise_72
          Console.WriteLine("Found at index: " + index);
         }   
         }
-        }
+      }
     }
   }
     
-}
+
 
