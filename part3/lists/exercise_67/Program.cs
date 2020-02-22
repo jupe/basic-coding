@@ -20,6 +20,7 @@ namespace exercise_67
         }
         list.Add(input);
         i++;
+        
       }
 
     }
