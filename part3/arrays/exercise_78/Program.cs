@@ -29,10 +29,11 @@ namespace exercise_78
       int first = Convert.ToInt32(Console.ReadLine());
       int second = Convert.ToInt32(Console.ReadLine());
       // and then swapping them
-      int temp = 0;
-      temp =array[first];
-      array[first] = array[second];
-      array[second] = temp;
+      int swap1 = array[first];
+      int swap2 = array[second];
+
+      array[first] = swap2;
+      array[second] = swap1;
 
 
       // DO NOT CHANGE THE FOLLOWING CODE!
