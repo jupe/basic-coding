@@ -31,11 +31,11 @@ namespace exercise_113
 
       foreach (Book item in list)
       {
-          if (printInformation == "evetything")
+          if (printInformation == "everything")
           {
               Console.WriteLine(item);
           }
-          else if (printInformation == "name")
+          else if (printInformation == "title")
           {
               Console.WriteLine(item.title);
           }
