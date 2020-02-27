@@ -10,7 +10,6 @@ namespace exercise_114
            while (true) 
            {
                string line = Console.ReadLine();
-
                
                if (line == "end")
                {
