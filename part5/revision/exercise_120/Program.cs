@@ -8,7 +8,7 @@ namespace exercise_120
     {
       // You can test your cube here.
       Cube myCube = new Cube(4);
-      myCube.Volyme();
+      myCube.Volume();
 
       Console.WriteLine(myCube);
     }
