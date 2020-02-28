@@ -12,5 +12,6 @@ namespace exercise_120
 
       Console.WriteLine(myCube);
     }
+    
   }
 }
