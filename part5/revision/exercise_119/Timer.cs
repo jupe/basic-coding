@@ -12,6 +12,7 @@ namespace exercise_119
         }
         public void Advance()
         {
+            
             this.hundred.Advance();
             if  (this.hundred.value == 0)
             {

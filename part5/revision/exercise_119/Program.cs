@@ -28,6 +28,7 @@ namespace exercise_119
         catch (Exception e)
         {
             Console.WriteLine("Error happened: +" + e);
+            
         }
       }
     }
