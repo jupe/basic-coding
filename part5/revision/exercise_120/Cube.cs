@@ -8,14 +8,13 @@ namespace exercise_120
     {
       this.edgeLength = edgeLength;
     }
-    public int volume()
+    public int Volume()
     {
       return this.edgeLength = this.edgeLength * this.edgeLength * this.edgeLength;
     }
-  
     public override string ToString()
     {
-      return "The lenght of the edge is " + this.edgeLength + " and the volume " + this.volume();
+      return "The length of the edge is " + this.edgeLength + " and the volume " + this.Volume();
     }
  
   }
