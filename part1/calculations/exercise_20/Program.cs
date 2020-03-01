@@ -15,7 +15,6 @@ namespace exercise_20
       Console.WriteLine(value1 + " * " + value2 + " = " + (intValue * intValue2));
 
       // Write your code here:
-
     }
   }
 }
