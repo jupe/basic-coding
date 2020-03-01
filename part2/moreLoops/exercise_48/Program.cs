@@ -10,7 +10,7 @@ namespace exercise_48
       // Write your code here:
       Console.WriteLine("Give numbers:");
       int summa = 0; 
-      int numbers = 0;
+      int validNumbers = 0;
       int even = 0;
       int odd = 0;
 
@@ -23,7 +23,7 @@ namespace exercise_48
           break;
         }
         summa += intValue1;
-        numbers++;
+        validNumbers++;
         if ((intValue1 % 2) == 0)
         {
           even++;
@@ -32,16 +32,13 @@ namespace exercise_48
         {
           odd++;
         }
-        
-     }
-
-     double avarage = (double)summa / numbers;   
-      Console.WriteLine("Thx! Bye!");
-      Console.WriteLine("Sum: " + summa);
-      Console.WriteLine("Numbers: " + numbers);
-      Console.WriteLine("Avarage: " + avarage);
-      Console.WriteLine("Even: " + even);
-      Console.WriteLine("Odd: " + odd);
+      }
+        Console.WriteLine("Thx! Bye!");
+        Console.WriteLine("Sum: " + summa);
+        Console.WriteLine("Numbers: " + validNumbers);
+        Console.WriteLine("Average: " + (double)summa /validNumbers);
+        Console.WriteLine("Even: " + even);
+        Console.WriteLine("Odd: " + odd);
     }
   }
 }
