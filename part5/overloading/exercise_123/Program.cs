@@ -7,12 +7,11 @@ namespace exercise_123
     public static void Main(string[] args)
     {
       // You can test your code here.
-      Counter counter = new Counter(4);
+      Counter counter = new Counter(5);
      
       counter.Increase();
-      counter.Decrease();
-      counter.Increase(5);
-      counter.Decrease(3);
+      counter.Increase(4);
+      counter.Decrease(6);
       Console.WriteLine(counter);
      
     }
