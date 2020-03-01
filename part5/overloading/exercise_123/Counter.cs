@@ -25,16 +25,20 @@ namespace exercise_123
         {
             if (increaseBy > 0)
             {
-                this.value = this.value + increaseBy;
+                this.value += increaseBy;
             }
         }    
         public void Decrease(int decreaseBy)
         {
             if (decreaseBy > 0)
             {
-                this.value = this.value - decreaseBy;
+                this.value -= decreaseBy;
             }
+
         }
-        public override string ToString() { return " " + this.value + " "; }
+        public override string ToString() 
+        { 
+            return " " + this.value + " "; 
+        }
     } 
 }
