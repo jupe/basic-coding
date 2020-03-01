@@ -16,6 +16,7 @@ namespace exercise_125
       // incrase weighings
       this.weighings++;
       return person.weight;
+      
     }
 
     public void Feed(Person person)

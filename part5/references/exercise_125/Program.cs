@@ -31,6 +31,7 @@ namespace exercise_125
       childrensHospital.Weigh(ethan);
       childrensHospital.Weigh(ethan);
 
+
       // See that the variable has increased to 8
       Console.WriteLine("weighings performed: " + childrensHospital.weighings);
 
