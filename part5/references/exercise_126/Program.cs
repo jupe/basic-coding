@@ -7,19 +7,23 @@ namespace exercise_126
     public static void Main(string[] args)
     {
       // Try your code here, if you want
-      {
-      PaymentCard petesCard = new PaymentCard(10);
+      PaymentTerminal lunchCafeteria = new PaymentTerminal();
+      Console.WriteLine(lunchCafeteria);
 
-      Console.WriteLine("money " + petesCard.balance);
-      bool wasSuccessful = petesCard.takeMoney(8);
-      Console.WriteLine("successfully withdrew: " + wasSuccessful);
-      Console.WriteLine("money " + petesCard.balance);
+      PaymentCard annesCard = new PaymentCard(2);
 
-      wasSuccessful = petesCard.takeMoney(4);
-      Console.WriteLine("successfully withdrew: " + wasSuccessful);
-      Console.WriteLine("money " + petesCard.balance);
+      Console.WriteLine("amount of money on the card is " + annesCard.balance + "euros");
+      bool wasSuccessful = lunchCafeteria.EatLunch(annesCard);
+      Console.WriteLine("ther was enough money " + wasSuccessful);
 
-      }
+      lunchCafeteria.AddMoneyToCard(annesCard, 100);
+
+      wasSuccessful = lunchCafeteria.EatLunch(annesCard);
+      Console.WriteLine("there was enough money: " + wasSuccessful);
+      Console.WriteLine("amount of money on the card is " + annesCard.balance + " euros");
+
+      Console.WriteLine(lunchCafeteria);
+      
     }
   }
 }
