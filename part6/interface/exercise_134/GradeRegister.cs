@@ -60,6 +60,16 @@ public class GradeRegister
   public double AverageOfGrades()
   {
     // Hint! You don't need to round the -1, but you do need it for all the other results...
+   if (this.grades.Count == 0)
+   {
+     return Math.Round(-1.0, 2);
+   }
+   double sum = 0.00;
+   foreach (double grade in this.grades)
+   {
+     sum += grade;
+   }
+  
     return Math.Round(-1.0, 2);
   }
 
