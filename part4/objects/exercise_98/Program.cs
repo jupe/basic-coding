@@ -8,7 +8,8 @@ namespace exercise_98
     {
       // Create Product.cs and follow the instructions.
       // You can test your class with this.
-      
+      Product banana = new Product ("banana", 1.1, 13);
+          banana.PrintProduct();
 
     }
   }

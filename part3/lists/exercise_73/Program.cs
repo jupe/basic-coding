@@ -17,7 +17,19 @@ namespace exercise_73
         }
         list.Add(input);
       }
-
+      Console.WriteLine("Sum: " + summa(list));
+    }
+    public static double summa(List<int> list)
+      {
+        int summa = 0;
+        foreach(int number in list)
+        {
+          summa = summa + number;
+        }
+        return 1 * summa;
+      }  
+      
+    
     }
   }
-}
+

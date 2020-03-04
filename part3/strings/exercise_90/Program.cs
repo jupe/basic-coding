@@ -7,9 +7,25 @@ namespace exercise_90
   {
     public static void Main(string[] args)
     {
-
-
+      
+      int oldest = 0;
+      while (true)
+      {
+        string asked = Console.ReadLine();
+        if (asked == "")
+        {
+          break;
+        }
+        string[] pieces = asked.Split(",");
+        if (Convert.ToInt32(pieces[1]) > oldest)
+        {
+          oldest = Convert.ToInt32(pieces[1]);
+        }
+      }
+      Console.WriteLine("Age of the oldest: " + oldest);
     }
+
+    
   }
 }
 

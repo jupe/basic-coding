@@ -17,6 +17,10 @@ namespace exercise_65
         }
         list.Add(input);
       }
+      int value = list.Count;
+      Console.WriteLine("In total: " + value);
+
+    
 
     }
   }

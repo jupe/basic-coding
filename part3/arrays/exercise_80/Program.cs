@@ -13,9 +13,15 @@ namespace exercise_80
 
     }
 
-    public static int SumOfNumbersInArray(int[] numbers) {
-
-      return 0;
+    public static int SumOfNumbersInArray(int[] numbers) 
+    {
+      int sum = 0;
+      for (int i = 0; i < numbers.Length; i++)
+      {
+        int number = numbers[i];
+        sum = sum + number;
+      }
+      return (sum);
     }
 
   }

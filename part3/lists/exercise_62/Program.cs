@@ -16,12 +16,15 @@ namespace exercise_62
         {
           break;
         }
-
+        
         list.Add(input);
       }
-
+      
       // BEGIN SOLUTION
-      Console.WriteLine(list[0]);
+      if (list.Count > 2)
+      {
+        Console.WriteLine(list[2]);
+      }
       // END SOLUTION
     }
 
