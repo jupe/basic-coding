@@ -15,7 +15,12 @@ namespace exercise_136
       HowManyNames(jack);
       HowManyNames(mike);
     }
-
+    public static void HowManyNames(Person person)
+    {
+      string name = person.ToString();
+      int count = name.Split(' ').Length;
+      Console.WriteLine(name + " has " + count + " names.");
+    }
     // Do something here
   }
 }
