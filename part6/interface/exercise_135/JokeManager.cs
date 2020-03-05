@@ -5,16 +5,24 @@ public class JokeManager
     List<string> jokes = new List<string>();
 
 
-    public void AddJokes(string joke)
+    public void AddJoke(string joke)
     {
         this.jokes.Add(joke);
     }
 
     public string DrawJoke()
     {
-        Random draw = new Random();
-        int index = draw.Next(0, jokes.Count);
-        return (jokes[index]);
+          
+        if (this.jokes.Count == 0)
+        {
+            return "Jokes are in short supply.";
+        }
+        else
+        {
+            Random random = new Random();
+            int index = random.Next(0, this.jokes.Count);
+            return this.jokes[index];
+        }
     }
 
     public void PrintJokes()

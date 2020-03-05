@@ -9,6 +9,7 @@ namespace exercise_135
       JokeManager manager = new JokeManager(); 
       UserInterface ui = new UserInterface(manager);
       ui.Start();
-      }
     }
   }
+
+}
