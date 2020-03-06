@@ -19,7 +19,8 @@ namespace exercise_136
     public int HowManyNames()
     {
       // Do something here
-      return 0;
+      string[] pieces = this.name.Split(" ");
+      return pieces.Length;
     }
 
     public void GrowOlder()
