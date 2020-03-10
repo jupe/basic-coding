@@ -7,6 +7,7 @@ namespace exercise_56
     public static void Main(String[] args)
     {
     string Heidin = Word();
+    Console.WriteLine(Heidin);
     }
 
     // Write your method here:

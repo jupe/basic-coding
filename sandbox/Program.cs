@@ -6,14 +6,29 @@ namespace sandbox
     {
         static void Main(string[] args)
         {
-            
-            int eka = (1+1);
-            int toka = eka + 3 * (2 + 5);
-            eka = 5;
-            int kolmas = eka + toka;
-            Console.WriteLine(eka);
-            Console.WriteLine(toka);
-            Console.WriteLine(kolmas);
+           MultiplicationTable(10);
+
+        }        
+        public static void MultiplicationTable(int max)
+        {
+            int numero = 1;
+            while (numero <= max)
+            {
+                PrintMultiplicationTableRow(numero, max);
+                numero++;
+            }
+
         }
+        public static void PrintMultiplicationTableRow(int numero, int coefficient)
+        {
+            int printable = numero;
+            while (printable <= numero * coefficient)
+            {
+                Console.Write(" " + printable);
+                printable += numero;
+            }
+            Console.WriteLine("");
+        }
+
     }
 }
