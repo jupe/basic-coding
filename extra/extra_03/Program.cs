@@ -26,7 +26,6 @@ namespace extra_03
           count++;
         }  
       }
-      
       Console.WriteLine("Their sum: " + sum);
       Console.WriteLine("Their total: " + count);
       Console.WriteLine("Their average: " + (double) sum / count);
