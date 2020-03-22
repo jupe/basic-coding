@@ -6,7 +6,6 @@ namespace extra_06
   {
     public static void Main(string[] args)
     {
-      
       // Add your code here:
       int num = Convert.ToInt32(Console.ReadLine());
       int num2 = Convert.ToInt32(Console.ReadLine());
