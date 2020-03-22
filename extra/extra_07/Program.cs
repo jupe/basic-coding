@@ -22,8 +22,6 @@ namespace extra_07
         int number = Convert.ToInt32(row);
         sum ++;
       }   
-      
-      
       Console.WriteLine("Sum: " + sum);
     }
   }
