@@ -13,14 +13,17 @@ namespace extra_07
       while (true)
 
       {
-        int numbers = Convert.ToInt32(Console.ReadLine());
-        string input = Console.ReadLine();
-        if (input == "end")
+        string row = Console.ReadLine();
+
+        if (row == "end")
         {
           break;
         }
-        sum = sum + numbers;
-      }
+        int number = Convert.ToInt32(row);
+        sum ++;
+      }   
+      
+      
       Console.WriteLine("Sum: " + sum);
     }
   }
