@@ -42,6 +42,7 @@ namespace ExerciseTest
 
       Assert.LessOrEqual(1, count, "Use a Dictionary in your code!");
     }
+    
 
     [Test]
     public void TestForeachIsUsed()
