@@ -28,25 +28,17 @@ namespace Exercise
     }
     public static void PrintKeysWhere(Dictionary<string, string> dict, string text)
     {
-        Dictionary<string, string>.KeyCollection keys = dict.Keys;
-        foreach (string key in keys)
+        foreach (KeyValuePair<string, string> kvp in dict)
         {
-           if (key.Contains(text))
-           {
-             Console.WriteLine(key);
-           } 
+          if (kvp.Key.Contains(text)) System.Console.WriteLine(kvp.Key);
         }
     }
 
     public static void PrintValuesOfKeysWhere(Dictionary<string, string> dict, string text)
     {
-      Dictionary<string, string>.KeyCollection keys = dict.Keys;
-        foreach (string key in keys)
+        foreach (KeyValuePair<string, string> kvp in dict)
         {
-           if (key.Contains(text))
-           {
-             Console.WriteLine(dict[key]);
-           } 
+          if (kvp.Key.Contains(text)) System.Console.WriteLine(kvp.Value);
         }
     }
   }
