@@ -39,7 +39,14 @@ namespace Exercise
     public override bool Equals(object compared)
     {
       // DO SOMETHING HERE
-      return false;
+      if (this.day & this.month & this.year == compared) 
+      {
+        return true;
+      }
+      else
+      { 
+        return false;
+      }
     }
 
     public override int GetHashCode()
