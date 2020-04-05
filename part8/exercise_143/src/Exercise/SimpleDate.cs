@@ -1,3 +1,5 @@
+using System;
+
 namespace Exercise
 {
   public class SimpleDate
@@ -39,20 +41,28 @@ namespace Exercise
     public override bool Equals(object compared)
     {
       // DO SOMETHING HERE
-      if (this.day & this.month & this.year == compared) 
+      if (this == compared)
       {
-        return true;
+          return true;
       }
-      else
+      if ((compared == null) || !this.GetType().Equals(compared.GetType())) 
+    
       { 
-        return false;
+          return false;
       }
+      // Converts the object to an object specific to this class.      
+      SimpleDate comparedSimpleData = (SimpleDate)compared;
+      
+      // If the values of the object variables are the same, the objects are equal
+      return this.day == comparedSimpleData.day &&
+          this.month == comparedSimpleData.month &&
+          this.year == comparedSimpleData.year;
     }
 
     public override int GetHashCode()
     {
       // DO SOMETHING HERE
-      return -1;
+      return HashCode.Combine(this.day, this.month, this.year);
     }
   }
 }
