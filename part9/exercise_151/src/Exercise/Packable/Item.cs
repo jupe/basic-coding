@@ -14,6 +14,7 @@ namespace Exercise
 
     public Item(string name) : this(name, 0)
     {
+      
     }
 
     public override bool Equals(object compared)
@@ -40,7 +41,7 @@ namespace Exercise
 
     public override int GetHashCode()
     {
-      return this.name.GetHashCode();
+        return this.name.GetHashCode();
     }
   }
 }
