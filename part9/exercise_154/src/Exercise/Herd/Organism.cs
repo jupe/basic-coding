@@ -12,6 +12,7 @@ namespace Exercise
       this.x = x;
       this.y = y;
     }
+    
     public void Move(int dx, int dy)
     {
       this.x += dx;
