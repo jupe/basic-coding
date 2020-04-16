@@ -36,11 +36,7 @@ namespace Exercise
       shippingContainer.Add(movingVan);
 
       Console.WriteLine(shippingContainer);
-      Console.WriteLine();
-
-      Box emptyBox = new Box(0);
-      emptyBox.Add(book1);
-      Console.WriteLine(emptyBox);
+      
     }
   }
 }
