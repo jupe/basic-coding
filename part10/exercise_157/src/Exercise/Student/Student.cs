@@ -24,8 +24,7 @@ namespace Exercise
       {
         return this.name.CompareTo(another.name);
       }
-      
-     
+    
     }
     //END SOLUTION
   }
