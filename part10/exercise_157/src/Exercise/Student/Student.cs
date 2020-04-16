@@ -20,8 +20,12 @@ namespace Exercise
     //BEGIN SOLUTION
     public int CompareTo(Student another)
     {
-
-      return 0;
+      if (this.name == another.name)
+      {
+        return this.name.CompareTo(another.name);
+      }
+      
+     
     }
     //END SOLUTION
   }

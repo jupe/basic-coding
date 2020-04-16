@@ -24,14 +24,17 @@ namespace Exercise
 
       Console.WriteLine();
 
-      INoiseCapable noisyDog = new Dog();
-      noisyDog.MakeNoise();
+      INoiseCapable Dog = new Dog();
+      Dog.MakeNoise();
 
-      INoiseCapable noisyCat = new Cat("Garfield");
-      noisyCat.MakeNoise();
+      INoiseCapable Cat = new Cat("Garfield");
+      Cat.MakeNoise();
 
-      Cat c = (Cat)noisyCat;
+      Cat c = (Cat) cat;
       c.Purr();
+     
+     
+     
     }
   }
 }
