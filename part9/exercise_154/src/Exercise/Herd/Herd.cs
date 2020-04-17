@@ -4,28 +4,33 @@ namespace Exercise
   using System.Collections.Generic;
   public class Herd : IMovable
   {
-    private List<IMovable> list;
+    private List<IMovable> herd;
     public Herd()
     {
-      this.list = new List <IMovable>();
+      this.herd = new List <IMovable>();
     }
 
     public void AddToHerd(IMovable movable)
     {
-      this.list.Add(movable);
+      this.herd.Add(movable);
     }
 
     public void Move(int dx, int dy)
     {
-      foreach (IMovable item in list)
+      foreach (IMovable movable in herd)
       {
-        item.Move(dx, dy);
+        movable.Move(dx, dy);
       }
     }
 
     public override string ToString()
     {
-      return "x: " + this.x + "; y: " + this.y;
+      string herdPositions = "";
+      foreach (IMovable movable in herd)
+      {
+        herdPositions += movable.ToString() + "\n";
+      }
+      return herdPositions;
       
     }
   }
