@@ -13,6 +13,7 @@ namespace Exercise
     }
     public int ThrowDie()
     {
+      
       // generate a random number which may be any number
       // between one and the number of faces, and then return it
       return 0;
