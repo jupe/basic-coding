@@ -20,15 +20,26 @@ namespace Exercise
     public bool ContainsNumber(int number)
     {
       // Tests whether the number is already among the randomized numbers
-      return false;
+      return this.numbers.Contains(number);
     }
 
     public void RandomizeNumbers()
     {
       // initialize the list for numbers
       this.numbers = new List<int>();
-      // Implement the randomization of the numbers by using the method ContainsNumber() here
-    }
-
+      // Implement the randomization of the numbers 
+      //by using the method ContainsNumber() here
+      Random rnd = new Random();
+      while (this.numbers.Count < 7)
+      {
+        int lottery = rnd.Next(1, 41);
+        if (!ContainsNumber(lottery))
+        {
+          this.numbers.Add(lottery);
+        }
+      }
+      //Sort!
+      this.numbers.Sort();
+    } 
   }
 }
