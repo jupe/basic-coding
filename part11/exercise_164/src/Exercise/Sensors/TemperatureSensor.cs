@@ -3,26 +3,46 @@ namespace Exercise
   using System;
   public class TemperatureSensor : Sensor
   {
-
+    private Random random;
+    private bool isSensorOn;
+    public TemperatureSensor()
+    {
+      this.random = new Random();
+      this.isSensorOn = false;
+    }
+  
     public bool IsOn()
     {
-      return false;
+      if (true)
+      {
+        return this.isSensorOn;
+      }  
     }
 
 
     public void SetOn()
     {
+      this.isSensorOn = true;
     }
 
 
     public void SetOff()
     {
+      this.isSensorOn = false;
     }
 
 
     public int Read()
     {
-      return 0;
+      if (IsOn())
+      {
+        int temperature = this.random.Next(-30, 31);
+        return temperature;
+      }
+      else
+      {
+        throw new InvalidOperationException();
+      }
     }
-  }
+  }  
 }
