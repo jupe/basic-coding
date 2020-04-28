@@ -31,7 +31,7 @@ namespace Exercise
 
     public void Remove(string word)
     {
-      this.wordDictionary.Remove(word);
+     this.wordDictionary.Remove(word);
     }
   }
 }
