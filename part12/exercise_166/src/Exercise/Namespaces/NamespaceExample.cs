@@ -1,5 +1,7 @@
-
+namespace NamespaceExample
+{
 using System;
+
 class Example
 {
   public void ExampleMethod()
@@ -7,13 +9,15 @@ class Example
     Console.WriteLine("ExampleMethod in NamespaceExample");
   }
 }
-
-// This should be nested
-class Example
+namespace InnerNamespaceExample
 {
-  public void ExampleMethod()
+// This should be nested
+  class Example
   {
-    Console.WriteLine("ExampleMethod in InnerNamespaceExample");
-  }
+    public void ExampleMethod()
+    {
+      Console.WriteLine("ExampleMethod in InnerNamespaceExample");
+    }
+  }  
 }
-
+}
